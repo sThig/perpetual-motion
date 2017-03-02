@@ -1,0 +1,115 @@
+body, html {
+  background-color: #1c2024;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 30px solid #bada55;
+  animation: container-move .7s ease-in-out infinite alternate;
+
+  /*position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 30px solid #e3dbe3;
+  animation: container-move .7s ease-in-out infinite alternate;*/
+}
+
+@keyframes container-move {
+  from {transform: translateX(20px) rotate(10deg); }
+  to   {transform: translateX(-20px) rotate(-10deg); }
+}
+
+.box::before {
+  content: '';
+  height: 130px;
+  width: 260px;
+  background-color: #1c2024;
+  display: inline-block;
+  position: relative;
+  top: -35px;
+  left: -30px;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 75px;
+}
+
+.ball-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: ball-move .7s ease-in-out infinite alternate;
+}
+
+@keyframes ball-move {
+  from {transform: rotate(-35deg);}
+  to   {transform: rotate(35deg);}
+}
+
+
+
+
+
+
+/*@keyframes container-move {
+  from {transform: translateX(20px) rotate(10deg); }
+  to   {transform: translateX(-20px) rotate(-10deg); }
+}*/
+
+/*
+.box::before {
+  content: '';
+  height: 130px;
+  width: 260px;
+  background-color: #1c2024;
+  display: inline-block;
+  position: relative;
+  top: -35px;
+  left: -30px;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #e1c207;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 75px;
+}
+
+.ball-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: ball-move .7s ease-in-out infinite alternate;
+}
+
+@keyframes ball-move {
+  from {transform: rotate(-35deg);}
+  to   {transform: rotate(35deg);}
+}*/
